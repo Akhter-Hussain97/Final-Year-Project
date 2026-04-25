@@ -3,7 +3,7 @@ from rest_framework.response import Response
 import google.generativeai as genai
 
 # ✅ Add your API key here
-genai.configure(api_key="AIzaSyC23IreBIwLLMfHWLT7GxhxdK5aF1zi2rU")
+genai.configure(api_key="AIzaSyD76eGGBgptVTyK2CFuOWfv5_esxIFwRjg")
 
 # ✅ Load model
 model = genai.GenerativeModel("gemini-2.5-flash", system_instruction="You are a smart travel assistant for Pakistan. Suggest most visited places, packages, hotels, and travel tips.")

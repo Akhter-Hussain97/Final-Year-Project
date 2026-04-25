@@ -45,7 +45,7 @@ const Booking = () => {
     }
 
     try {
-      const res = await API.post("booking/create/", form);
+      await API.post("booking/create/", form);
       alert("Booking Successful 🎉");
       //console.log(res.data);
     } catch (error) {

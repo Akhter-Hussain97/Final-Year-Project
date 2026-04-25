@@ -61,7 +61,7 @@
   outline: none;
 }
 
-.contactForm .btn {
+.contactForm .btnc {
   background: var(--gradientColor);
   color: var(--whiteColor);
   padding: 0.8rem;
@@ -71,7 +71,7 @@
   font-weight: 600;
 }
 
-.contactForm .btn:hover {
+.contactForm .btnc:hover {
   background: var(--PrimaryColor);
 }
 

@@ -52,7 +52,7 @@ const Insurance = () => {
             </ul>
 
             <button
-              className="btn"
+              className="btnl"
               onClick={() =>
                 navigate("/booking", {
                   state: { insurance: plan },
