@@ -1,0 +1,206 @@
+
+.tourismHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.tourismTitle{
+  margin-top: 20px;
+}
+.tourismHeader h1 {
+  font-size: 2.2rem;
+}
+
+.tourismHeader p {
+  color: gray;
+}
+
+/* CONTROLS */
+.tourismControls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tourismControls input,
+.tourismControls select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* GRID */
+.tourismGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+/* GRID */
+.tourismGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* CARD */
+.tourismCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.tourismCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.imageWrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.tourismCard:hover img {
+  transform: scale(1.1);
+}
+
+/* PRICE TAG */
+.priceTag {
+  position: absolute;
+  right: 10px;
+  background: #00b4d8;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* CONTENT */
+.cardContent {
+  padding: 1rem;
+}
+
+.cardContent h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 13px;
+  color: #999;
+}
+
+/* BUTTON */
+.exploreBtn {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.exploreBtn:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+}
+
+/* EMPTY STATE */
+.noData {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+}
+/* CARD */
+.tourismCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+}
+
+.tourismCard:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.imgBox img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+    top: 10px;
+    left: 10px;
+  background: #00b4d8;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+/* CONTENT */
+.tourismCard h3 {
+  padding: 10px;
+  color: #0077b6;
+}
+
+.tourismCard p {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* BUTTON */
+.tourismCard button {
+  margin: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tourismCard button:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+}
+
+/* NO DATA */
+.noData {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: gray;
+}

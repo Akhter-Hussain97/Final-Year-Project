@@ -1,0 +1,117 @@
+.trivago-container {
+    margin-top: 40px;
+  padding: 40px;
+  background: #f5f7fa;
+}
+
+/* HEADER */
+.trivago-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.trivago-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.trivago-header p {
+  color: #777;
+}
+
+/* FILTERS */
+.trivago-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.trivago-input,
+.trivago-select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* GRID */
+.trivago-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.trivago-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.trivago-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.trivago-image-box {
+  position: relative;
+}
+
+.trivago-image-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.trivago-rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* CONTENT */
+.trivago-content {
+  padding: 15px;
+}
+
+.trivago-city {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.trivago-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trivago-price {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.trivago-btn {
+  background: #3498db;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.trivago-btn:hover {
+  background: #2980b9;
+}
+
+/* EMPTY */
+.trivago-empty {
+  text-align: center;
+  color: #999;
+}

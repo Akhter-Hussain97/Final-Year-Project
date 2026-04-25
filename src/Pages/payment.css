@@ -1,0 +1,63 @@
+.paymentContainer {
+  max-width: 600px;
+  margin: 120px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.paymentContainer h1 {
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+/* Buttons */
+.paymentMethods {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.paymentMethods button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.paymentMethods button.active {
+  background: #0077b6;
+  color: white;
+}
+
+/* Form */
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paymentForm input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.payBtn {
+  padding: 12px;
+  background: linear-gradient(135deg,#00b4d8,#0077b6);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payBtn:hover {
+  background: linear-gradient(135deg,#0077b6,#023e8a);
+}

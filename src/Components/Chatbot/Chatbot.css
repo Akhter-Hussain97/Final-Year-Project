@@ -1,0 +1,61 @@
+.chatbot {
+  padding: 6rem 1.5rem 3rem;
+}
+
+.chatbotContainer {
+  max-width: 800px;
+  margin: auto;
+}
+
+.chatbotDesc {
+  text-align: center;
+  color: var(--textColor);
+  margin-bottom: 1.5rem;
+}
+
+.chatBox {
+  height: 400px;
+  overflow-y: auto;
+  background: var(--whiteColor);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.message {
+  max-width: 70%;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.userMsg {
+  background: var(--PrimaryColor);
+  color: white;
+  margin-left: auto;
+}
+
+.botMsg {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: auto;
+}
+
+.inputBox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--greyText);
+  outline: none;
+}
+
+.inputBox .btn {
+  padding: 0.8rem 1.5rem;
+}

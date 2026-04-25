@@ -1,0 +1,83 @@
+.contact {
+  padding: 6rem 1.5rem 3rem;
+  width: 100%;
+}
+
+.contactContainer {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.contactDesc {
+  text-align: center;
+  color: var(--textColor);
+  margin-bottom: 2rem;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--whiteColor);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.infoBox .icon {
+  font-size: 1.5rem;
+  color: var(--PrimaryColor);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--greyText);
+  outline: none;
+}
+
+.contactForm .btn {
+  background: var(--gradientColor);
+  color: var(--whiteColor);
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contactForm .btn:hover {
+  background: var(--PrimaryColor);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+}

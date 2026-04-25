@@ -1,0 +1,16 @@
+.filterBar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  select, input {
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid var(--greyText);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

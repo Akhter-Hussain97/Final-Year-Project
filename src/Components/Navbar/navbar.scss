@@ -1,0 +1,121 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(255, 225, 235);
+}
+
+/* ====================
+      HEADER
+==================== */
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--whiteColorDeam);
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.0944);
+
+  .logo {
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      font-size: 25px;
+      color: var(--PrimaryColor);
+      transform: translate(5px);
+    }
+  }
+    .navLists{
+        display:flex;
+        gap:20px;
+        align-content: right;
+        font-size: 20px;
+        font-weight: 400;
+    }
+  .toggleNavbar {
+    display: none;
+    .icon {
+      font-size: 25px;
+      color: var(--PrimaryColor);
+    }
+
+    &:hover .icon {
+      color: var(--SecondaryColor);
+    }
+  }
+  .closeNavbar{
+    display: none;
+  }
+}
+
+/* Default NavBar (Desktop) */
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ====================
+   RESPONSIVE NAVBAR
+==================== */
+
+@media screen and (max-width: 768px) {
+  .header {
+
+    .toggleNavbar {
+      display: block;
+      cursor: pointer;
+    }
+
+    .navBar {
+      position: absolute;
+      background: var(--whiteColorDeam);
+      height: max-content;
+      width: 80%;
+      border-radius: 1rem;
+      top: -500rem;
+      left: 50%;
+      padding: 1rem;
+      transform: translate(-50%);
+      z-index: 2000;
+      box-shadow: 0 2px 4px rgba(2, 15, 29, 0.0944);
+      transition: 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+
+      .navLists {
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+
+      .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        display: block;
+        color: var(--PrimaryColor);
+      }
+    }
+
+    .activeNavbar {
+      top: 7rem;
+    }
+  }
+}

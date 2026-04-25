@@ -1,0 +1,73 @@
+/* MAIN CONTAINER */
+.booking-containers {
+  max-width: 500px;
+  margin: 90px auto; 
+  padding: 30px;      
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* TITLE */
+.booking-containers h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #2a2a2a;
+}
+
+/* INPUT FIELDS */
+.booking-containers input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.booking-containers input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+}
+
+/* READONLY */
+.booking-containers input[readonly] {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* BUTTON */
+.booking-containers button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: #fff;
+
+  font-size: 16px;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.booking-containers button:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .booking-containers {
+    margin: 80px 15px;   /* ✅ better mobile spacing */
+    padding: 20px;
+  }
+}

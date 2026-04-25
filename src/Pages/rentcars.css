@@ -1,0 +1,113 @@
+.rentcars {
+  margin-top: 80px;
+}
+
+.rentHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rentHeader h1 {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.rentSearch {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rentSearch input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* GRID */
+.rentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.rentCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.rentCard:hover {
+  transform: translateY(-5px);
+}
+
+.rentCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.rentInfo {
+  padding: 15px;
+}
+
+.rentDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.btnm {
+  width: 100%;
+  padding: 10px;
+  background: var(--PrimaryColor);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btnm:hover {
+  background: var(--SecondaryColor);
+}
+.imageWrapper {
+  position: relative;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  background: #0077b6;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.location {
+  color: gray;
+  font-size: 14px;
+}
+
+.rentMeta {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.price {
+  color: #0077b6;
+  font-weight: bold;
+}

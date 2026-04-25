@@ -1,0 +1,83 @@
+.services {
+  text-align: center;
+}
+
+/* HEADER */
+.serviceHeader h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.serviceHeader p {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+/* GRID */
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* CARD */
+.serviceCard {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+.serviceIcon {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* TAG */
+.tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00b4d8;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* TITLE */
+.serviceCard h3 {
+  margin: 10px 0;
+}
+
+/* DESCRIPTION */
+.serviceCard p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* BUTTON */
+.serviceBtn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serviceBtn:hover {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+}

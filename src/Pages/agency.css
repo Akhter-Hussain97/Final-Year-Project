@@ -1,0 +1,46 @@
+.agency {
+  text-align: center;
+}
+
+.agencyHeader h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.agencyHeader p {
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.agencyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.agencyCard {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.agencyCard:hover {
+  transform: translateY(-5px);
+}
+
+.agencyCard h3 {
+  color: #0077b6;
+}
+
+.agencyCard h4 {
+  font-size: 14px;
+  color: gray;
+  margin: 5px 0;
+}
+
+.agencyCard p {
+  font-size: 14px;
+  color: #555;
+}

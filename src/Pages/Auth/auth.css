@@ -1,0 +1,40 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authContainer {
+  width: 350px;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.authContainer h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.authContainer input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btnn {
+  width: 100%;
+  padding: 0.7rem;
+  background:blue;
+  text-align:center;
+  align-items: center;
+  align-content:center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
